@@ -46,8 +46,12 @@ public class RockPaperScissors {
                 case 3:
                     numChoice = 3;
                     System.out.println("\nYou Chose: Scissors");
-                    break;        
-            }     
+                    break; 
+                   
+            }    
+            if (numChoice != 1 || numChoice != 2 || numChoice != 3)
+                System.out.println("YOU ENTERED INCORRECT VALUE");
+            
             // computer choices
             int numChoice2 = compChoice.nextInt(3) + 1;
             switch (numChoice2)
